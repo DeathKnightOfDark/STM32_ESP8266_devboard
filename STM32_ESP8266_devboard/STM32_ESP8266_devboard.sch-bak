@@ -477,23 +477,4 @@ Wire Wire Line
 Connection ~ 1950 5650
 Wire Wire Line
 	1950 5650 2150 5650
-$Comp
-L Device:C C?
-U 1 1 5F46C470
-P 3600 5450
-F 0 "C?" H 3485 5404 50  0000 R CNN
-F 1 "4,7uF" H 3485 5495 50  0000 R CNN
-F 2 "" H 3638 5300 50  0001 C CNN
-F 3 "~" H 3600 5450 50  0001 C CNN
-	1    3600 5450
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	3100 5300 3600 5300
-Connection ~ 3100 5300
-Wire Wire Line
-	3600 5600 3600 5650
-Wire Wire Line
-	3600 5650 3100 5650
-Connection ~ 3100 5650
 $EndSCHEMATC
