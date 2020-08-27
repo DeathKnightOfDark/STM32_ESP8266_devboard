@@ -1,5 +1,6 @@
 EESchema Schematic File Version 4
-EELAYER 30 0
+LIBS:STM32_ESP8266_devboard-cache
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -121,16 +122,14 @@ Wire Wire Line
 $Comp
 L Device:R R?
 U 1 1 5F439B15
-P 10300 2500
-F 0 "R?" V 10093 2500 50  0000 C CNN
-F 1 "10k" V 10184 2500 50  0000 C CNN
-F 2 "" V 10230 2500 50  0001 C CNN
-F 3 "~" H 10300 2500 50  0001 C CNN
-	1    10300 2500
+P 10550 2500
+F 0 "R?" V 10343 2500 50  0000 C CNN
+F 1 "10k" V 10434 2500 50  0000 C CNN
+F 2 "" V 10480 2500 50  0001 C CNN
+F 3 "~" H 10550 2500 50  0001 C CNN
+	1    10550 2500
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	9950 2500 10150 2500
 $Comp
 L power:GND #PWR?
 U 1 1 5F439BE6
@@ -142,8 +141,6 @@ F 3 "" H 10700 2650 50  0001 C CNN
 	1    10700 2650
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	10450 2500 10700 2500
 Wire Wire Line
 	10700 2500 10700 2650
 $Comp
@@ -1025,4 +1022,361 @@ Wire Wire Line
 Wire Wire Line
 	6450 5500 6400 5500
 Connection ~ 6400 5500
+NoConn ~ 2050 2000
+$Comp
+L Connector_Generic:Conn_01x10 J?
+U 1 1 5F4801FB
+P 9400 5450
+F 0 "J?" H 9480 5442 50  0000 L CNN
+F 1 "ESP_GPIO" H 9480 5351 50  0000 L CNN
+F 2 "" H 9400 5450 50  0001 C CNN
+F 3 "~" H 9400 5450 50  0001 C CNN
+	1    9400 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F4803C7
+P 9100 6050
+F 0 "#PWR?" H 9100 5800 50  0001 C CNN
+F 1 "GND" H 9105 5877 50  0000 C CNN
+F 2 "" H 9100 6050 50  0001 C CNN
+F 3 "" H 9100 6050 50  0001 C CNN
+	1    9100 6050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9200 5950 9100 5950
+Wire Wire Line
+	9100 5950 9100 6050
+Text Label 9950 2600 0    50   ~ 0
+ESP_D0
+Text Label 9200 5050 2    50   ~ 0
+ESP_D0
+Text Label 9950 2100 0    50   ~ 0
+ESP_D1
+Text Label 9200 5150 2    50   ~ 0
+ESP_D1
+Text Label 9950 2000 0    50   ~ 0
+ESP_D2
+Text Label 9200 5250 2    50   ~ 0
+ESP_D2
+Text Label 9200 5350 2    50   ~ 0
+ESP_D3
+Text Label 10150 4200 2    50   ~ 0
+ESP_D3
+Wire Wire Line
+	10150 4350 10150 4200
+Connection ~ 10150 4350
+Text Label 9950 2400 0    50   ~ 0
+ESP_D5
+Text Label 9200 5450 2    50   ~ 0
+ESP_D5
+Text Label 9950 2200 0    50   ~ 0
+ESP_D6
+Text Label 9200 5550 2    50   ~ 0
+ESP_D6
+Text Label 9950 2300 0    50   ~ 0
+ESP_D7
+Text Label 9200 5650 2    50   ~ 0
+ESP_D7
+Wire Wire Line
+	9950 2500 10350 2500
+Text Label 10400 2200 0    50   ~ 0
+ESP_D8
+Wire Wire Line
+	10400 2200 10350 2200
+Wire Wire Line
+	10350 2200 10350 2500
+Connection ~ 10350 2500
+Wire Wire Line
+	10350 2500 10400 2500
+Text Label 9200 5750 2    50   ~ 0
+ESP_D8
+Wire Wire Line
+	9100 5950 9100 5850
+Wire Wire Line
+	9100 5850 9200 5850
+Connection ~ 9100 5950
+$Comp
+L Connector_Generic:Conn_01x13 J?
+U 1 1 5F49DE4D
+P 5800 2900
+F 0 "J?" H 5879 2942 50  0000 L CNN
+F 1 "STM32_GPIO_1" H 5879 2851 50  0000 L CNN
+F 2 "" H 5800 2900 50  0001 C CNN
+F 3 "~" H 5800 2900 50  0001 C CNN
+	1    5800 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F49E43D
+P 5450 3650
+F 0 "#PWR?" H 5450 3400 50  0001 C CNN
+F 1 "GND" H 5455 3477 50  0000 C CNN
+F 2 "" H 5450 3650 50  0001 C CNN
+F 3 "" H 5450 3650 50  0001 C CNN
+	1    5450 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 3650 5450 3500
+Wire Wire Line
+	5450 3500 5600 3500
+Text Label 3350 2400 0    50   ~ 0
+PA_0
+Text Label 3350 2500 0    50   ~ 0
+PA_1
+Text Label 3350 2600 0    50   ~ 0
+PA_2
+Text Label 3350 2700 0    50   ~ 0
+PA_3
+Text Label 3350 2800 0    50   ~ 0
+PA_4
+Text Label 3350 2900 0    50   ~ 0
+PA_5
+Text Label 3350 3000 0    50   ~ 0
+PA_6
+Text Label 3350 3100 0    50   ~ 0
+PA_7
+Text Label 3350 3200 0    50   ~ 0
+PA_8
+Text Label 5600 2300 2    50   ~ 0
+PA_0
+Text Label 5600 2400 2    50   ~ 0
+PA_1
+Text Label 5600 2500 2    50   ~ 0
+PA_2
+Text Label 5600 2600 2    50   ~ 0
+PA_3
+Text Label 5600 2700 2    50   ~ 0
+PA_4
+Text Label 5600 2800 2    50   ~ 0
+PA_5
+Text Label 5600 2900 2    50   ~ 0
+PA_6
+Text Label 5600 3000 2    50   ~ 0
+PA_7
+Text Label 5600 3100 2    50   ~ 0
+PA_8
+Text Label 3350 3500 0    50   ~ 0
+PA_11
+Text Label 3350 3600 0    50   ~ 0
+PA_12
+Text Label 3350 3900 0    50   ~ 0
+PA_15
+Text Label 5600 3200 2    50   ~ 0
+PA_11
+Text Label 5600 3300 2    50   ~ 0
+PA_12
+Text Label 5600 3400 2    50   ~ 0
+PA_15
+$Comp
+L Connector_Generic:Conn_01x13 J?
+U 1 1 5F4A94C2
+P 4600 2900
+F 0 "J?" H 4679 2942 50  0000 L CNN
+F 1 "STM32_GPIO_2" H 4679 2851 50  0000 L CNN
+F 2 "" H 4600 2900 50  0001 C CNN
+F 3 "~" H 4600 2900 50  0001 C CNN
+	1    4600 2900
+	1    0    0    -1  
+$EndComp
+Text Label 2050 2400 2    50   ~ 0
+PB_0
+Text Label 2050 2500 2    50   ~ 0
+PB_1
+Text Label 2050 2700 2    50   ~ 0
+PB_3
+Text Label 2050 2800 2    50   ~ 0
+PB_4
+Text Label 2050 2900 2    50   ~ 0
+PB_5
+Text Label 2050 3000 2    50   ~ 0
+PB_6
+Text Label 2050 3100 2    50   ~ 0
+PB_7
+Text Label 2050 3200 2    50   ~ 0
+PB_8
+Text Label 2050 3300 2    50   ~ 0
+PB_9
+Text Label 2050 3400 2    50   ~ 0
+PB_10
+Text Label 2050 3500 2    50   ~ 0
+PB_11
+Text Label 2050 3600 2    50   ~ 0
+PB_12
+Text Label 2050 3700 2    50   ~ 0
+PB_13
+Text Label 2050 3800 2    50   ~ 0
+PB_14
+Text Label 2050 3900 2    50   ~ 0
+PB_15
+Text Label 4400 2300 2    50   ~ 0
+PB_0
+Text Label 4400 2400 2    50   ~ 0
+PB_1
+Text Label 4400 2500 2    50   ~ 0
+PB_3
+Text Label 4400 2600 2    50   ~ 0
+PB_4
+Text Label 4400 2700 2    50   ~ 0
+PB_5
+Text Label 4400 2800 2    50   ~ 0
+PB_6
+Text Label 4400 2900 2    50   ~ 0
+PB_7
+Text Label 4400 3000 2    50   ~ 0
+PB_8
+Text Label 4400 3100 2    50   ~ 0
+PB_9
+Text Label 4400 3200 2    50   ~ 0
+PB_10
+Text Label 4400 3300 2    50   ~ 0
+PB_11
+Text Label 4400 3400 2    50   ~ 0
+PB_12
+$Comp
+L power:GND #PWR?
+U 1 1 5F4AA5EA
+P 4300 3600
+F 0 "#PWR?" H 4300 3350 50  0001 C CNN
+F 1 "GND" H 4305 3427 50  0000 C CNN
+F 2 "" H 4300 3600 50  0001 C CNN
+F 3 "" H 4300 3600 50  0001 C CNN
+	1    4300 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 3600 4300 3500
+Wire Wire Line
+	4300 3500 4400 3500
+$Comp
+L Connector_Generic:Conn_01x04 J?
+U 1 1 5F4B927D
+P 4600 1350
+F 0 "J?" H 4679 1342 50  0000 L CNN
+F 1 "STM32_GPIO_3" H 4679 1251 50  0000 L CNN
+F 2 "" H 4600 1350 50  0001 C CNN
+F 3 "~" H 4600 1350 50  0001 C CNN
+	1    4600 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F4B935B
+P 4350 1700
+F 0 "#PWR?" H 4350 1450 50  0001 C CNN
+F 1 "GND" H 4355 1527 50  0000 C CNN
+F 2 "" H 4350 1700 50  0001 C CNN
+F 3 "" H 4350 1700 50  0001 C CNN
+	1    4350 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 1700 4350 1550
+Wire Wire Line
+	4350 1550 4400 1550
+Text Label 4400 1250 2    50   ~ 0
+PB_13
+Text Label 4400 1350 2    50   ~ 0
+PB_14
+Text Label 4400 1450 2    50   ~ 0
+PB_15
+Text Label 8750 2700 2    50   ~ 0
+ESP_SCLK
+Text Label 8750 2600 2    50   ~ 0
+ESP_MOSI
+Text Label 8750 2300 2    50   ~ 0
+ESP_MISO
+Text Label 8750 2200 2    50   ~ 0
+ESP_CSO
+Text Label 8750 2000 2    50   ~ 0
+ESP_ADC
+Text Label 8750 2500 2    50   ~ 0
+ESP_SDD3
+Text Label 8750 2400 2    50   ~ 0
+ESP_SDD2
+$Comp
+L Connector_Generic:Conn_01x08 J?
+U 1 1 5F4CE53D
+P 8200 5400
+F 0 "J?" H 8280 5392 50  0000 L CNN
+F 1 "Conn_01x08" H 8280 5301 50  0000 L CNN
+F 2 "" H 8200 5400 50  0001 C CNN
+F 3 "~" H 8200 5400 50  0001 C CNN
+	1    8200 5400
+	1    0    0    -1  
+$EndComp
+Text Label 8000 5100 2    50   ~ 0
+ESP_ADC
+Text Label 8000 5400 2    50   ~ 0
+ESP_CSO
+Text Label 8000 5200 2    50   ~ 0
+ESP_SDD2
+Text Label 8000 5300 2    50   ~ 0
+ESP_SDD3
+Text Label 8000 5500 2    50   ~ 0
+ESP_MISO
+Text Label 8000 5600 2    50   ~ 0
+ESP_MOSI
+Text Label 8000 5700 2    50   ~ 0
+ESP_SCLK
+$Comp
+L power:GND #PWR?
+U 1 1 5F4CF011
+P 7900 5950
+F 0 "#PWR?" H 7900 5700 50  0001 C CNN
+F 1 "GND" H 7905 5777 50  0000 C CNN
+F 2 "" H 7900 5950 50  0001 C CNN
+F 3 "" H 7900 5950 50  0001 C CNN
+	1    7900 5950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7900 5950 7900 5800
+Wire Wire Line
+	7900 5800 8000 5800
+$Comp
+L Connector:Barrel_Jack J?
+U 1 1 5F4D4887
+P 6150 1150
+F 0 "J?" H 6205 1475 50  0000 C CNN
+F 1 "Barrel_Jack" H 6205 1384 50  0000 C CNN
+F 2 "" H 6200 1110 50  0001 C CNN
+F 3 "~" H 6200 1110 50  0001 C CNN
+	1    6150 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5F4D4BD0
+P 6550 950
+F 0 "#PWR?" H 6550 800 50  0001 C CNN
+F 1 "+5V" H 6565 1123 50  0000 C CNN
+F 2 "" H 6550 950 50  0001 C CNN
+F 3 "" H 6550 950 50  0001 C CNN
+	1    6550 950 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 1050 6550 1050
+Wire Wire Line
+	6550 1050 6550 950 
+$Comp
+L power:GND #PWR?
+U 1 1 5F4DA12C
+P 6600 1400
+F 0 "#PWR?" H 6600 1150 50  0001 C CNN
+F 1 "GND" H 6605 1227 50  0000 C CNN
+F 2 "" H 6600 1400 50  0001 C CNN
+F 3 "" H 6600 1400 50  0001 C CNN
+	1    6600 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 1250 6600 1250
+Wire Wire Line
+	6600 1250 6600 1400
 $EndSCHEMATC
