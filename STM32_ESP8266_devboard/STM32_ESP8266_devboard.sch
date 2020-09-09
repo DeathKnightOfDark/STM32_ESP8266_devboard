@@ -506,7 +506,7 @@ U 1 1 5F44FEFB
 P 2650 6950
 F 0 "Y2" H 2650 7218 50  0000 C CNN
 F 1 "32768kHz" H 2650 7127 50  0000 C CNN
-F 2 "Crystal:Crystal_HC52-8mm_Vertical" H 2650 6950 50  0001 C CNN
+F 2 "Crystal:Crystal_DS26_D2.0mm_L6.0mm_Horizontal_1EP_style1" H 2650 6950 50  0001 C CNN
 F 3 "~" H 2650 6950 50  0001 C CNN
 	1    2650 6950
 	1    0    0    -1  
