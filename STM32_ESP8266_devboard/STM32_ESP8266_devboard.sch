@@ -699,7 +699,7 @@ Text Label 2050 1500 2    50   ~ 0
 BOOT0
 Text Label 2050 2600 2    50   ~ 0
 BOOT1
-Text Label 5050 7150 2    50   ~ 0
+Text Label 5050 7250 2    50   ~ 0
 BOOT0
 $Comp
 L Connector_Generic:Conn_02x03_Counter_Clockwise J5
@@ -715,35 +715,35 @@ $EndComp
 $Comp
 L Device:R R3
 U 1 1 5F478C8B
-P 6300 7150
-F 0 "R3" H 6370 7196 50  0000 L CNN
-F 1 "10k" H 6370 7105 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 6230 7150 50  0001 C CNN
-F 3 "~" H 6300 7150 50  0001 C CNN
-	1    6300 7150
+P 6300 7250
+F 0 "R3" H 6370 7296 50  0000 L CNN
+F 1 "10k" H 6370 7205 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 6230 7250 50  0001 C CNN
+F 3 "~" H 6300 7250 50  0001 C CNN
+	1    6300 7250
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:R R2
 U 1 1 5F478E8B
-P 5300 7150
-F 0 "R2" H 5370 7196 50  0000 L CNN
-F 1 "10k" H 5370 7105 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 5230 7150 50  0001 C CNN
-F 3 "~" H 5300 7150 50  0001 C CNN
-	1    5300 7150
+P 5300 7250
+F 0 "R2" H 5370 7296 50  0000 L CNN
+F 1 "10k" H 5370 7205 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 5230 7250 50  0001 C CNN
+F 3 "~" H 5300 7250 50  0001 C CNN
+	1    5300 7250
 	0    -1   -1   0   
 $EndComp
-Text Label 6600 7150 0    50   ~ 0
+Text Label 6600 7250 0    50   ~ 0
 BOOT1
 Wire Wire Line
-	6050 7150 6150 7150
+	6050 7250 6150 7250
 Wire Wire Line
-	6450 7150 6600 7150
+	6450 7250 6600 7250
 Wire Wire Line
-	5050 7150 5150 7150
+	5050 7250 5150 7250
 Wire Wire Line
-	5450 7150 5550 7150
+	5450 7250 5550 7250
 $Comp
 L power:+3.3V #PWR0118
 U 1 1 5F484C1D
@@ -755,45 +755,6 @@ F 3 "" H 5550 6750 50  0001 C CNN
 	1    5550 6750
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:+3.3V #PWR0119
-U 1 1 5F484C75
-P 6050 6750
-F 0 "#PWR0119" H 6050 6600 50  0001 C CNN
-F 1 "+3.3V" H 6065 6923 50  0000 C CNN
-F 2 "" H 6050 6750 50  0001 C CNN
-F 3 "" H 6050 6750 50  0001 C CNN
-	1    6050 6750
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0120
-U 1 1 5F484CD4
-P 5550 7400
-F 0 "#PWR0120" H 5550 7150 50  0001 C CNN
-F 1 "GND" H 5555 7227 50  0000 C CNN
-F 2 "" H 5550 7400 50  0001 C CNN
-F 3 "" H 5550 7400 50  0001 C CNN
-	1    5550 7400
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0121
-U 1 1 5F484D1C
-P 6050 7400
-F 0 "#PWR0121" H 6050 7150 50  0001 C CNN
-F 1 "GND" H 6055 7227 50  0000 C CNN
-F 2 "" H 6050 7400 50  0001 C CNN
-F 3 "" H 6050 7400 50  0001 C CNN
-	1    6050 7400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5550 7250 5550 7400
-Wire Wire Line
-	6050 7250 6050 7400
-Wire Wire Line
-	6050 6750 6050 7050
 Wire Wire Line
 	5550 6750 5550 7050
 Text Label 9950 1700 0    50   ~ 0
@@ -815,9 +776,9 @@ F 3 "~" H 3850 7100 50  0001 C CNN
 	1    3850 7100
 	1    0    0    -1  
 $EndComp
-Text Label 4050 7100 0    50   ~ 0
-SWDIO
 Text Label 4050 7200 0    50   ~ 0
+SWDIO
+Text Label 4050 7100 0    50   ~ 0
 SWCLK
 $Comp
 L power:+3.3V #PWR0122
@@ -917,11 +878,11 @@ Text Label 4400 5900 0    50   ~ 0
 STM32_TX
 Text Label 3900 6000 2    50   ~ 0
 ESP_TX
-Text Label 3900 6100 2    50   ~ 0
+Text Label 4400 6100 0    50   ~ 0
 ESP_TX_OUT
 Text Label 3900 5900 2    50   ~ 0
 STM32_RX
-Text Label 4400 6100 0    50   ~ 0
+Text Label 3900 6100 2    50   ~ 0
 ESP_RX_OUT
 Text Label 4400 6000 0    50   ~ 0
 ESP_RX
@@ -1213,29 +1174,29 @@ Text Label 2050 3800 2    50   ~ 0
 PB_14
 Text Label 2050 3900 2    50   ~ 0
 PB_15
-Text Label 4400 2300 2    50   ~ 0
+Text Label 4400 3400 2    50   ~ 0
 PB_0
-Text Label 4400 2400 2    50   ~ 0
+Text Label 4400 3300 2    50   ~ 0
 PB_1
 Text Label 4400 2500 2    50   ~ 0
 PB_3
 Text Label 4400 2600 2    50   ~ 0
 PB_4
-Text Label 4400 2700 2    50   ~ 0
+Text Label 4400 2400 2    50   ~ 0
 PB_5
-Text Label 4400 2800 2    50   ~ 0
+Text Label 4400 2300 2    50   ~ 0
 PB_6
-Text Label 4400 2900 2    50   ~ 0
+Text Label 4400 1450 2    50   ~ 0
 PB_7
-Text Label 4400 3000 2    50   ~ 0
+Text Label 4400 1250 2    50   ~ 0
 PB_8
-Text Label 4400 3100 2    50   ~ 0
+Text Label 4400 1350 2    50   ~ 0
 PB_9
 Text Label 4400 3200 2    50   ~ 0
 PB_10
-Text Label 4400 3300 2    50   ~ 0
+Text Label 4400 3100 2    50   ~ 0
 PB_11
-Text Label 4400 3400 2    50   ~ 0
+Text Label 4400 3000 2    50   ~ 0
 PB_12
 $Comp
 L power:GND #PWR0131
@@ -1278,11 +1239,11 @@ Wire Wire Line
 	4350 1700 4350 1550
 Wire Wire Line
 	4350 1550 4400 1550
-Text Label 4400 1250 2    50   ~ 0
+Text Label 4400 2900 2    50   ~ 0
 PB_13
-Text Label 4400 1350 2    50   ~ 0
+Text Label 4400 2800 2    50   ~ 0
 PB_14
-Text Label 4400 1450 2    50   ~ 0
+Text Label 4400 2700 2    50   ~ 0
 PB_15
 Text Label 8750 2700 2    50   ~ 0
 ESP_SCLK
@@ -1311,17 +1272,17 @@ F 3 "~" H 8200 5400 50  0001 C CNN
 $EndComp
 Text Label 8000 5100 2    50   ~ 0
 ESP_ADC
-Text Label 8000 5400 2    50   ~ 0
-ESP_CSO
-Text Label 8000 5200 2    50   ~ 0
-ESP_SDD2
-Text Label 8000 5300 2    50   ~ 0
-ESP_SDD3
-Text Label 8000 5500 2    50   ~ 0
-ESP_MISO
-Text Label 8000 5600 2    50   ~ 0
-ESP_MOSI
 Text Label 8000 5700 2    50   ~ 0
+ESP_CSO
+Text Label 8000 5500 2    50   ~ 0
+ESP_SDD2
+Text Label 8000 5400 2    50   ~ 0
+ESP_SDD3
+Text Label 8000 5600 2    50   ~ 0
+ESP_MISO
+Text Label 8000 5300 2    50   ~ 0
+ESP_MOSI
+Text Label 8000 5200 2    50   ~ 0
 ESP_SCLK
 $Comp
 L power:GND #PWR0133
@@ -1624,4 +1585,23 @@ Wire Wire Line
 	4000 4950 4000 5100
 Wire Wire Line
 	4500 4950 4500 5100
+Wire Wire Line
+	5550 7150 5550 7050
+Connection ~ 5550 7050
+$Comp
+L power:GND #PWR0119
+U 1 1 5F5BED15
+P 6050 6700
+F 0 "#PWR0119" H 6050 6450 50  0001 C CNN
+F 1 "GND" H 6055 6527 50  0000 C CNN
+F 2 "" H 6050 6700 50  0001 C CNN
+F 3 "" H 6050 6700 50  0001 C CNN
+	1    6050 6700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6050 7150 6050 7050
+Wire Wire Line
+	6050 7050 6050 6700
+Connection ~ 6050 7050
 $EndSCHEMATC
