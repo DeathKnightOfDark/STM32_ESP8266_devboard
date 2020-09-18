@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source D:\STM32_ESP8266_devboard\STM32_ESP8266_devboard\STM32_ESP8266_devboard.sch)
-    (date "10.09.2020 12:00:46")
+    (date "18.09.2020 16:45:36")
     (tool "Eeschema (5.0.2)-1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -742,12 +742,12 @@
       (node (ref C10) (pin 1))
       (node (ref J12) (pin 4)))
     (net (code 3) (name /PA_0)
+      (node (ref R10) (pin 1))
       (node (ref U1) (pin 10))
       (node (ref J6) (pin 1)))
     (net (code 4) (name /PA_1)
       (node (ref U1) (pin 11))
-      (node (ref J6) (pin 2))
-      (node (ref R10) (pin 1)))
+      (node (ref J6) (pin 2)))
     (net (code 5) (name /PA_2)
       (node (ref J6) (pin 3))
       (node (ref U1) (pin 12)))
