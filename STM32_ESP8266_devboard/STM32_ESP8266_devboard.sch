@@ -876,7 +876,7 @@ F 3 "~" H 4100 6000 50  0001 C CNN
 $EndComp
 Text Label 4400 5900 0    50   ~ 0
 STM32_TX
-Text Label 3900 6000 2    50   ~ 0
+Text Label 4400 6000 0    50   ~ 0
 ESP_TX
 Text Label 4400 6100 0    50   ~ 0
 ESP_TX_OUT
@@ -884,7 +884,7 @@ Text Label 3900 5900 2    50   ~ 0
 STM32_RX
 Text Label 3900 6100 2    50   ~ 0
 ESP_RX_OUT
-Text Label 4400 6000 0    50   ~ 0
+Text Label 3900 6000 2    50   ~ 0
 ESP_RX
 $Comp
 L Regulator_Linear:AMS1117-3.3 U2

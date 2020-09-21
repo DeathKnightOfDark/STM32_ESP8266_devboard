@@ -1432,7 +1432,7 @@ $EndComp
 Wire Wire Line
 	6300 4450 6300 4350
 Text Label 7050 3450 0    50   ~ 0
-PA_1
+PA_0
 $Comp
 L Device:R R10
 U 1 1 5F4ABBD3
